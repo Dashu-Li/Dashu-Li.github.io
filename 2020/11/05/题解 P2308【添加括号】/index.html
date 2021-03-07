@@ -19,13 +19,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"dashu-li.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="P2308 添加括号 题目背景给定一个正整数序列$a_1,a_2,\cdots,a_n,(1\le n\le20)$ 不改变序列中每个元素在序列中的位置，把它们相加，并用括号记每次加法所得的和，称为中间和。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解 P2308【添加括号】">
-<meta property="og:url" content="http://example.com/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/index.html">
+<meta property="og:url" content="https://dashu-li.github.io/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/index.html">
 <meta property="og:site_name" content="李大恕 的博客">
 <meta property="og:description" content="P2308 添加括号 题目背景给定一个正整数序列$a_1,a_2,\cdots,a_n,(1\le n\le20)$ 不改变序列中每个元素在序列中的位置，把它们相加，并用括号记每次加法所得的和，称为中间和。">
 <meta property="og:locale" content="zh_CN">
@@ -37,7 +37,7 @@
 <meta property="article:tag" content="区间dp">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/">
+<link rel="canonical" href="https://dashu-li.github.io/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/">
 
 
 <script id="page-configurations">
@@ -171,7 +171,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/">
+    <link itemprop="mainEntityOfPage" href="https://dashu-li.github.io/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -265,7 +265,7 @@ f[i][j]=\min_{k\in[i,j-1]}\{f[i][k]+f[k+1][j]+s[j]-s[i-1]\}</script><p>即区间
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://example.com/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/" title="题解 P2308【添加括号】">http://example.com/2020/11/05/题解 P2308【添加括号】/</a>
+    <a href="https://dashu-li.github.io/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/" title="题解 P2308【添加括号】">https://dashu-li.github.io/2020/11/05/题解 P2308【添加括号】/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
