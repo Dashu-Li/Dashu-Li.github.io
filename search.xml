@@ -44,7 +44,9 @@
           
           <category> 信息学奥赛/OI </category>
           
-          <category> 洛谷 </category>
+          <category> 动态规划/dp </category>
+          
+          <category> 区间dp </category>
           
       </categories>
       
@@ -53,9 +55,7 @@
             
             <tag> 信息学奥赛/OI </tag>
             
-            <tag> 动态规划/dp </tag>
-            
-            <tag> 区间dp </tag>
+            <tag> 洛谷 </tag>
             
         </tags>
       
@@ -75,7 +75,9 @@
           
           <category> 信息学奥赛/OI </category>
           
-          <category> 洛谷 </category>
+          <category> 动态规划/dp </category>
+          
+          <category> 树形dp </category>
           
       </categories>
       
@@ -84,9 +86,7 @@
             
             <tag> 信息学奥赛/OI </tag>
             
-            <tag> 动态规划/dp </tag>
-            
-            <tag> 树形dp </tag>
+            <tag> 洛谷 </tag>
             
         </tags>
       
