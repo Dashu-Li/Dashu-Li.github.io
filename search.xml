@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>刚体力学笔记</title>
+      <link href="2021/12/05/%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+      <url>2021/12/05/%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="转动惯量"><a href="#转动惯量" class="headerlink" title="转动惯量"></a>转动惯量</h3><p>一个刚体的<strong>转动惯量</strong>定义为</p><script type="math/tex; mode=display">I=\sum_im_i{r_i}^2</script><span id="more"></span><p>$m_i$指刚体上第$i$个质点的质量，$r_i$指刚体上第$i$个质点到转轴的距离。转动惯量在研究刚体转动中的地位与刚体质量在研究刚体平动时的地位相当。</p><p>下面讨论几种常见物体的转动惯量。</p><ul><li><p>圆环（转轴在圆心处，垂直圆面）</p><p>由于圆环上所有点到圆环的距离均为$R$，则根据转动惯量的定义，有</p><script type="math/tex; mode=display">I=mR^2</script></li><li><p>圆盘（转轴在圆心处，垂直圆面）</p><p>采用微元思想，可将圆盘分为一个个圆环求。应用上面结论，可知</p><script type="math/tex; mode=display">I=\int_0^R\mathrm dm\cdot r^2</script><p>其中，$\mathrm dm$为分出的圆环质量。$r$为圆环半径。圆环宽度极细，为$\mathrm dr$，此时圆环面积趋近于圆环长与圆环宽度的乘积，即$\mathrm dS=2\pi r\mathrm dr$。则</p><script type="math/tex; mode=display">\mathrm dm=\sigma\cdot\mathrm dS=\sigma\cdot2\pi r\mathrm dr</script><p>$\sigma$为圆盘面密度，有$\sigma=\cfrac{m}{\pi R^2}$。带入上式，可得</p><script type="math/tex; mode=display">\begin{aligned}I&=\int_0^R\mathrm dm\cdot r^2\\&=\int_0^R\sigma\cdot2\pi r\mathrm dr\cdot r^2\\&=2\pi\sigma\int_0^Rr^3\mathrm dr\\&=2\pi\cdot\frac{m}{\pi R^2}\cdot\frac{1}{4}R^4\\&=\frac{1}{2}mR^2\end{aligned}</script></li><li><p>球壳（转轴通过球心）</p><p>仍然采用微元思想，将球壳由上到下分为一个个圆环。若每个圆环的纬度设为$\theta$，又上下两个半球转动惯量相同，应用上面结论，有</p><script type="math/tex; mode=display">I=2\int_0^\frac{\pi}{2}\mathrm dm\cdot(R\cos\theta)^2</script><p>此时$\mathrm dS=2\pi R\cos\theta\cdot R\mathrm d\theta$，$\mathrm dm=\sigma\cdot\mathrm dS=\sigma\cdot2\pi R\cos\theta\cdot R\mathrm d\theta$，$\sigma=\cfrac{m}{4\pi R^2}$。均代入上式，有</p><script type="math/tex; mode=display">\begin{aligned}I&=2\int_0^\frac{\pi}{2}\mathrm dm\cdot(R\cos\theta)^2\\&=2\int_0^\frac{\pi}{2}\sigma\cdot2\pi R\cos\theta\cdot R\mathrm d\theta\cdot R^2\cos^2\theta\\&=4\pi\sigma R^4\int_0^\frac{\pi}{2}\cos^3\theta\mathrm d\theta\\&=4\pi\cdot\cfrac{m}{4\pi R^2}\cdot R^4\int_0^\frac{\pi}{2}(1-\sin^2\theta)\mathrm d\sin\theta\\&=mR^2\left(\eval{\sin\theta}_0^\frac{\pi}{2}-\frac{1}{3}\eval{\sin^3\theta}_0^\frac{\pi}{2}\right)\\&=mR^2\left(1-\frac{1}{3}\right)\\&=\frac{2}{3}mR^2\end{aligned}</script></li><li><p>球体（转轴通过球心）</p><p>将球体分为一层一层球壳来求。应用上面结论，可知</p><script type="math/tex; mode=display">I=\int_0^R\frac{2}{3}\mathrm dm\cdot r^2</script><p>此时$\mathrm dm=\rho\mathrm dV$，$\rho$为球体密度，即$\rho=\cfrac{m}{\frac{4}{3}\pi R^3}$。而球壳厚度极薄，为$\mathrm dr$，则球壳体积趋近于球壳表面积与球壳厚度的乘积，即$\mathrm dV=4\pi r^2\mathrm dr$。因此，$\mathrm dm=\rho\cdot4\pi r^2\mathrm dr$。代入上式，得</p><script type="math/tex; mode=display">\begin{aligned}I&=\int_0^R\frac{2}{3}\mathrm dm\cdot r^2\\&=\int_0^R\frac{2}{3}\rho\cdot4\pi r^2\mathrm dr\cdot r^2\\&=\frac{8}{3}\pi\rho\int_0^Rr^4\mathrm dr\\&=\frac{8}{3}\pi\cdot\cfrac{m}{\frac{4}{3}\pi R^3}\cdot\frac{1}{5}R^5\\&=\frac{2}{5}mR^5\end{aligned}</script></li></ul><h3 id="刚体的定轴转动"><a href="#刚体的定轴转动" class="headerlink" title="刚体的定轴转动"></a>刚体的定轴转动</h3><ol><li><p><strong>动能</strong></p><p>刚体绕轴以角速度$\omega$旋转。将刚体转动的动能拆分成其上每一个质点的动能之和</p><script type="math/tex; mode=display">E_k=\sum_i\frac{1}{2}m_i(\omega r_i)^2=\frac{1}{2}\left(\sum_im_i{r_i}^2\right)\omega^2</script><p>由<strong>转动惯量</strong>的定义，可知</p><script type="math/tex; mode=display">E_k=\frac{1}{2}\left(\sum_im_i{r_i}^2\right)\omega^2=\frac{1}{2}I\omega^2</script></li><li><p><strong>角动量</strong></p><p>刚体绕轴以角速度$\boldsymbol\omega$旋转。与上面采用同样的方法，将刚体转动的角动量拆分成其上每一个质点的角动量之和</p><script type="math/tex; mode=display">\boldsymbol L=\sum_i\boldsymbol L_i=\sum_i\boldsymbol r_i\times m_i(\boldsymbol\omega\times\boldsymbol r_i)</script><p>当所有的$\boldsymbol L_i$都与$\boldsymbol\omega$方向相同时，有</p><script type="math/tex; mode=display">\boldsymbol L=\sum_im_i{r_i}^2\boldsymbol\omega=\left(\sum_im_i{r_i}^2\right)\boldsymbol\omega</script><p>由<strong>转动惯量</strong>的定义，可知</p><script type="math/tex; mode=display">\boldsymbol L=I\boldsymbol\omega</script></li><li><p><strong>力矩与角加速度</strong></p><p>当角速度方向与角动量方向相同时，由上可知</p><script type="math/tex; mode=display">\boldsymbol L=I\boldsymbol\omega</script><p>等式两边分别对$t$求导，即得</p><script type="math/tex; mode=display">\boldsymbol M=I\boldsymbol\beta</script><p>这就是力矩与角加速度的关系。该式在研究刚体转动中的地位与牛顿第二定律在研究刚体平动中的地位相当。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 物理 </category>
+          
+          <category> 力学 </category>
+          
+          <category> 刚体 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 物理竞赛/PhO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>三角形中描述边关系的定理及其证明</title>
+      <link href="2021/10/19/%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E6%8F%8F%E8%BF%B0%E8%BE%B9%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E8%AF%81%E6%98%8E/"/>
+      <url>2021/10/19/%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E6%8F%8F%E8%BF%B0%E8%BE%B9%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E8%AF%81%E6%98%8E/</url>
+      
+        <content type="html"><![CDATA[<p>注：本篇中所指的“边”是<strong>一切和三角形有关的边</strong>，包括但不限于中线、角平分线、梅氏线等。</p><h3 id="Menelaus定理"><a href="#Menelaus定理" class="headerlink" title="Menelaus定理"></a>Menelaus定理</h3><span id="more"></span><p>根据我的做题经验，这个定理极为有用，适用面很广。因此，将其置于此篇文章的首位，是不无道理的。</p><p><img src="/.io//Menelaus_1.png" alt="Menelaus" style="zoom:15%;"></p><ul><li><p><strong>Menelaus定理</strong>：如图，在$\triangle ABC$​中，一直线与$\triangle ABC$​的边$AB,AC,BC$​（或其延长线）分别交于点$D,E,F$​​。则有：</p><script type="math/tex; mode=display">\frac{AD}{DB}\cdot\frac{BF}{FC}\cdot\frac{CE}{EA}=1</script><p>其中，$\triangle ABC$​被称为<strong>梅氏三角形</strong>，直线$DEF$​是$\triangle ABC$​​的<strong>梅氏线</strong>。</p></li><li><p><strong>记忆口诀</strong>：<strong>顶点</strong>（梅氏三角形的顶点）到<strong>交点</strong>（梅氏线与梅氏三角形的交点），交点回顶点。</p></li><li><p><strong>定理证明</strong></p><p><img src="/.io//Menelaus_2.png" alt="Menelaus" style="zoom:15%;"></p><p>如图，过点$C$​作$CP/\mskip-4mu/DE$​交$AB$于点$P$。<br>则根据<strong>平行线分线段成比例定理</strong>，有</p><script type="math/tex; mode=display">\frac{BF}{FC}=\frac{BD}{DP}\\\frac{CE}{EA}=\frac{PD}{DA}</script><p>所以</p><script type="math/tex; mode=display">\frac{AD}{DB}\cdot\frac{BF}{FC}\cdot\frac{CE}{EA}=\frac{AD}{DB}\cdot\frac{BD}{DP}\cdot\frac{PD}{DA}=1</script><p>证毕。</p></li></ul><h3 id="Ceva定理"><a href="#Ceva定理" class="headerlink" title="Ceva定理"></a>Ceva定理</h3><p><strong>Ceva定理</strong>的应用不如<strong>Menelaus定理</strong>那么广泛，但仍是极为实用的定理。尤其是<strong>Ceva定理</strong>与<strong>Menelaus定理</strong>有着密切的关联，</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 几何 </category>
+          
+          <category> 三角形 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 三角形 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>阿喀琉斯与龟问题探究</title>
       <link href="2021/08/06/%E9%98%BF%E5%96%80%E7%90%89%E6%96%AF%E4%B8%8E%E9%BE%9F%E9%97%AE%E9%A2%98%E6%8E%A2%E7%A9%B6/"/>
       <url>2021/08/06/%E9%98%BF%E5%96%80%E7%90%89%E6%96%AF%E4%B8%8E%E9%BE%9F%E9%97%AE%E9%A2%98%E6%8E%A2%E7%A9%B6/</url>

@@ -22,21 +22,20 @@
     var CONFIG = {"hostname":"dashu-li.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="P2308 添加括号 题面题目背景">
+  <meta name="description" content="转动惯量一个刚体的转动惯量定义为  I&#x3D;\sum_im_i{r_i}^2">
 <meta property="og:type" content="article">
-<meta property="og:title" content="题解 P2308【添加括号】">
-<meta property="og:url" content="https://dashu-li.github.io/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/index.html">
+<meta property="og:title" content="刚体力学笔记">
+<meta property="og:url" content="https://dashu-li.github.io/2021/12/05/%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="李大恕 的博客">
-<meta property="og:description" content="P2308 添加括号 题面题目背景">
+<meta property="og:description" content="转动惯量一个刚体的转动惯量定义为  I&#x3D;\sum_im_i{r_i}^2">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-11-04T16:59:55.000Z">
-<meta property="article:modified_time" content="2021-04-03T02:08:55.206Z">
+<meta property="article:published_time" content="2021-12-05T15:49:08.000Z">
+<meta property="article:modified_time" content="2021-12-05T15:58:44.692Z">
 <meta property="article:author" content="李大恕">
-<meta property="article:tag" content="信息学奥赛&#x2F;OI">
-<meta property="article:tag" content="洛谷">
+<meta property="article:tag" content="物理竞赛&#x2F;PhO">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://dashu-li.github.io/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/">
+<link rel="canonical" href="https://dashu-li.github.io/2021/12/05/%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -49,7 +48,7 @@
   };
 </script>
 
-  <title>题解 P2308【添加括号】 | 李大恕 的博客</title>
+  <title>刚体力学笔记 | 李大恕 的博客</title>
   
 
 
@@ -198,7 +197,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dashu-li.github.io/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/">
+    <link itemprop="mainEntityOfPage" href="https://dashu-li.github.io/2021/12/05/%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -211,7 +210,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          题解 P2308【添加括号】
+          刚体力学笔记
         </h1>
 
         <div class="post-meta">
@@ -220,31 +219,25 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-11-05 00:59:55" itemprop="dateCreated datePublished" datetime="2020-11-05T00:59:55+08:00">2020-11-05</time>
+              <time title="创建时间：2021-12-05 23:49:08 / 修改时间：23:58:44" itemprop="dateCreated datePublished" datetime="2021-12-05T23:49:08+08:00">2021-12-05</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-03 10:08:55" itemprop="dateModified" datetime="2021-04-03T10:08:55+08:00">2021-04-03</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B-OI/" itemprop="url" rel="index"><span itemprop="name">信息学奥赛/OI</span></a>
+                  <a href="/categories/%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">物理</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B-OI/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-dp/" itemprop="url" rel="index"><span itemprop="name">动态规划/dp</span></a>
+                  <a href="/categories/%E7%89%A9%E7%90%86/%E5%8A%9B%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">力学</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B-OI/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-dp/%E5%8C%BA%E9%97%B4dp/" itemprop="url" rel="index"><span itemprop="name">区间dp</span></a>
+                  <a href="/categories/%E7%89%A9%E7%90%86/%E5%8A%9B%E5%AD%A6/%E5%88%9A%E4%BD%93/" itemprop="url" rel="index"><span itemprop="name">刚体</span></a>
                 </span>
             </span>
 
@@ -266,29 +259,81 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P2308">P2308 添加括号</a></p>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><h4 id="题目背景"><a href="#题目背景" class="headerlink" title="题目背景"></a>题目背景</h4><span id="more"></span>
-<p>给定一个正整数序列$a_1,a_2,\cdots,a_n,(1\le n\le20)$</p>
-<p>不改变序列中每个元素在序列中的位置，把它们相加，并用括号记每次加法所得的和，称为中间和。</p>
-<p>例如:</p>
-<p>给出序列是$4,1,2,3$。</p>
-<p>第一种添括号方法:</p>
-<p>$((4+1)+(2+3))=((5)+(5))=(10)$</p>
-<p>有三个中间和是$5,5,10$，它们之和为:$5+5+10=20$</p>
-<p>第二种添括号方法</p>
-<p>$(4+((1+2)+3))=(4+((3)+3))=(4+(6))=(10)$</p>
-<p>中间和是$3,6,10$，它们之和为$19$。</p>
-<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>现在要添上$n-1$对括号，加法运算依括号顺序进行，得到$n-1$个中间和，求出使中间和之和最小的添括号方法。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>共两行。第一行，为整数$n(1\le n\le20)$。第二行，为$a_1,a_2,\cdots,a_n$这$n$个正整数，每个数字不超过$100$。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出$3$行。第一行，为添加括号的方法。第二行，为最终的中间和之和。第三行，为$n-1$个中间和，按照从里到外，从左到右的顺序输出。</p>
-<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><p>很明显，此题是一道区间dp。<del>（有两个点多解，数据过于毒瘤，害我调了好久，请求开启SPJ @chen_zhe）</del></p>
-<p>定义状态$f[i][j]$表示区间$[i,j]$的最小的中间和之和。区间dp的状态转移是按照区间长度从小到大进行，因此$[i,j]$必然由更小的区间转移而来。当然，为了转移时更方便计算中间和，我们使用前缀和$s[i]$来存储$\sum\limits_{k=1}^ia_k$。</p>
-<p>考虑$k\in[i,j-1]$中的任意断点$k$，可将区间分成两个部分$[i,k]$和$[k+1,j]$，那么有</p>
+        <h3 id="转动惯量"><a href="#转动惯量" class="headerlink" title="转动惯量"></a>转动惯量</h3><p>一个刚体的<strong>转动惯量</strong>定义为</p>
 <script type="math/tex; mode=display">
-f[i][j]=\min_{k\in[i,j-1]}\{f[i][k]+f[k+1][j]+s[j]-s[i-1]\}</script><p>即区间$[i,k]$与区间$[k+1,j]$的最小中间和之和相加，再加上当前合并得到的中间和。上述即为状态转移方程。</p>
-<p>当然本题还需注意最后的输出：我们用$h[i][j]$来存储区间$[i,j]$的断点，每一个区间分成两段，递归输出即可。</p>
-<p>其余详见代码。</p>
-<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> f[<span class="number">21</span>][<span class="number">21</span>],s[<span class="number">21</span>],h[<span class="number">21</span>][<span class="number">21</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print1</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span>			<span class="comment">// 输出添加括号方法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l==r)&#123;						<span class="comment">// 区间只有一个数，输出并回溯</span></span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;s[l]-s[l<span class="number">-1</span>];</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&#x27;(&#x27;</span>;</span><br><span class="line">	print1(l,h[l][r]);				<span class="comment">// 输出左半段</span></span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&#x27;+&#x27;</span>;</span><br><span class="line">	print1(h[l][r]+<span class="number">1</span>,r);			<span class="comment">// 输出右半段</span></span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&#x27;)&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print2</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span>			<span class="comment">// 输出中间和</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(l==r)<span class="keyword">return</span>;					<span class="comment">// 区间只有一个数，不存在中间和，回溯</span></span><br><span class="line">	print2(l,h[l][r]);				<span class="comment">// 输出左半段</span></span><br><span class="line">	print2(h[l][r]+<span class="number">1</span>,r);			<span class="comment">// 输出右半段</span></span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;s[r]-s[l<span class="number">-1</span>]&lt;&lt;<span class="string">&#x27; &#x27;</span>;			<span class="comment">// 输出当前区间中间和</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,i,j,l,a;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="built_in">memset</span>(f,<span class="number">0x3f</span>,<span class="keyword">sizeof</span>(f));</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;a;</span><br><span class="line">		f[i][i]=<span class="number">0</span>;					<span class="comment">// 初始化只有一个数的区间最小的中间和之和为0</span></span><br><span class="line">		s[i]=s[i<span class="number">-1</span>]+a;				<span class="comment">// 前缀和</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(l=<span class="number">2</span>;l&lt;=n;l++)				<span class="comment">// 第一层枚举区间长度，从2~n</span></span><br><span class="line">		<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n-l+<span class="number">1</span>;i++)		<span class="comment">// 第二层枚举区间左端点</span></span><br><span class="line">			<span class="keyword">for</span>(j=i;j&lt;i+l<span class="number">-1</span>;j++)	<span class="comment">// 第三层枚举断点</span></span><br><span class="line">				<span class="keyword">if</span>(f[i][j]+f[j+<span class="number">1</span>][i+l<span class="number">-1</span>]+s[i+l<span class="number">-1</span>]-s[i<span class="number">-1</span>]&lt;=f[i][i+l<span class="number">-1</span>])&#123; <span class="comment">// 毒瘤数据！必须写成&lt;=才能过，&lt;过不了</span></span><br><span class="line">					f[i][i+l<span class="number">-1</span>]=f[i][j]+f[j+<span class="number">1</span>][i+l<span class="number">-1</span>]+s[i+l<span class="number">-1</span>]-s[i<span class="number">-1</span>];	<span class="comment">// 更新f[i][j]</span></span><br><span class="line">					h[i][i+l<span class="number">-1</span>]=j;	<span class="comment">// 储存断点</span></span><br><span class="line">				&#125;</span><br><span class="line">	print1(<span class="number">1</span>,n);</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&#x27;\n&#x27;</span>&lt;&lt;f[<span class="number">1</span>][n]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">	print2(<span class="number">1</span>,n);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+I=\sum_im_i{r_i}^2</script><span id="more"></span>
+<p>$m_i$指刚体上第$i$个质点的质量，$r_i$指刚体上第$i$个质点到转轴的距离。转动惯量在研究刚体转动中的地位与刚体质量在研究刚体平动时的地位相当。</p>
+<p>下面讨论几种常见物体的转动惯量。</p>
+<ul>
+<li><p>圆环（转轴在圆心处，垂直圆面）</p>
+<p>由于圆环上所有点到圆环的距离均为$R$，则根据转动惯量的定义，有</p>
+<script type="math/tex; mode=display">
+I=mR^2</script></li>
+<li><p>圆盘（转轴在圆心处，垂直圆面）</p>
+<p>采用微元思想，可将圆盘分为一个个圆环求。应用上面结论，可知</p>
+<script type="math/tex; mode=display">
+I=\int_0^R\mathrm dm\cdot r^2</script><p>其中，$\mathrm dm$为分出的圆环质量。$r$为圆环半径。圆环宽度极细，为$\mathrm dr$，此时圆环面积趋近于圆环长与圆环宽度的乘积，即$\mathrm dS=2\pi r\mathrm dr$。则</p>
+<script type="math/tex; mode=display">
+\mathrm dm=\sigma\cdot\mathrm dS=\sigma\cdot2\pi r\mathrm dr</script><p>$\sigma$为圆盘面密度，有$\sigma=\cfrac{m}{\pi R^2}$。带入上式，可得</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+I&=\int_0^R\mathrm dm\cdot r^2\\
+&=\int_0^R\sigma\cdot2\pi r\mathrm dr\cdot r^2\\
+&=2\pi\sigma\int_0^Rr^3\mathrm dr\\
+&=2\pi\cdot\frac{m}{\pi R^2}\cdot\frac{1}{4}R^4\\
+&=\frac{1}{2}mR^2
+\end{aligned}</script></li>
+<li><p>球壳（转轴通过球心）</p>
+<p>仍然采用微元思想，将球壳由上到下分为一个个圆环。若每个圆环的纬度设为$\theta$，又上下两个半球转动惯量相同，应用上面结论，有</p>
+<script type="math/tex; mode=display">
+I=2\int_0^\frac{\pi}{2}\mathrm dm\cdot(R\cos\theta)^2</script><p>此时$\mathrm dS=2\pi R\cos\theta\cdot R\mathrm d\theta$，$\mathrm dm=\sigma\cdot\mathrm dS=\sigma\cdot2\pi R\cos\theta\cdot R\mathrm d\theta$，$\sigma=\cfrac{m}{4\pi R^2}$。均代入上式，有</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+I&=2\int_0^\frac{\pi}{2}\mathrm dm\cdot(R\cos\theta)^2\\
+&=2\int_0^\frac{\pi}{2}\sigma\cdot2\pi R\cos\theta\cdot R\mathrm d\theta\cdot R^2\cos^2\theta\\
+&=4\pi\sigma R^4\int_0^\frac{\pi}{2}\cos^3\theta\mathrm d\theta\\
+&=4\pi\cdot\cfrac{m}{4\pi R^2}\cdot R^4\int_0^\frac{\pi}{2}(1-\sin^2\theta)\mathrm d\sin\theta\\
+&=mR^2\left(\eval{\sin\theta}_0^\frac{\pi}{2}-\frac{1}{3}\eval{\sin^3\theta}_0^\frac{\pi}{2}\right)\\
+&=mR^2\left(1-\frac{1}{3}\right)\\
+&=\frac{2}{3}mR^2
+\end{aligned}</script></li>
+<li><p>球体（转轴通过球心）</p>
+<p>将球体分为一层一层球壳来求。应用上面结论，可知</p>
+<script type="math/tex; mode=display">
+I=\int_0^R\frac{2}{3}\mathrm dm\cdot r^2</script><p>此时$\mathrm dm=\rho\mathrm dV$，$\rho$为球体密度，即$\rho=\cfrac{m}{\frac{4}{3}\pi R^3}$。而球壳厚度极薄，为$\mathrm dr$，则球壳体积趋近于球壳表面积与球壳厚度的乘积，即$\mathrm dV=4\pi r^2\mathrm dr$。因此，$\mathrm dm=\rho\cdot4\pi r^2\mathrm dr$。代入上式，得</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+I&=\int_0^R\frac{2}{3}\mathrm dm\cdot r^2\\
+&=\int_0^R\frac{2}{3}\rho\cdot4\pi r^2\mathrm dr\cdot r^2\\
+&=\frac{8}{3}\pi\rho\int_0^Rr^4\mathrm dr\\
+&=\frac{8}{3}\pi\cdot\cfrac{m}{\frac{4}{3}\pi R^3}\cdot\frac{1}{5}R^5\\
+&=\frac{2}{5}mR^5
+\end{aligned}</script></li>
+</ul>
+<h3 id="刚体的定轴转动"><a href="#刚体的定轴转动" class="headerlink" title="刚体的定轴转动"></a>刚体的定轴转动</h3><ol>
+<li><p><strong>动能</strong></p>
+<p>刚体绕轴以角速度$\omega$旋转。将刚体转动的动能拆分成其上每一个质点的动能之和</p>
+<script type="math/tex; mode=display">
+E_k=\sum_i\frac{1}{2}m_i(\omega r_i)^2=\frac{1}{2}\left(\sum_im_i{r_i}^2\right)\omega^2</script><p>由<strong>转动惯量</strong>的定义，可知</p>
+<script type="math/tex; mode=display">
+E_k=\frac{1}{2}\left(\sum_im_i{r_i}^2\right)\omega^2=\frac{1}{2}I\omega^2</script></li>
+<li><p><strong>角动量</strong></p>
+<p>刚体绕轴以角速度$\boldsymbol\omega$旋转。与上面采用同样的方法，将刚体转动的角动量拆分成其上每一个质点的角动量之和</p>
+<script type="math/tex; mode=display">
+\boldsymbol L=\sum_i\boldsymbol L_i=\sum_i\boldsymbol r_i\times m_i(\boldsymbol\omega\times\boldsymbol r_i)</script><p>当所有的$\boldsymbol L_i$都与$\boldsymbol\omega$方向相同时，有</p>
+<script type="math/tex; mode=display">
+\boldsymbol L=\sum_im_i{r_i}^2\boldsymbol\omega=\left(\sum_im_i{r_i}^2\right)\boldsymbol\omega</script><p>由<strong>转动惯量</strong>的定义，可知</p>
+<script type="math/tex; mode=display">
+\boldsymbol L=I\boldsymbol\omega</script></li>
+<li><p><strong>力矩与角加速度</strong></p>
+<p>当角速度方向与角动量方向相同时，由上可知</p>
+<script type="math/tex; mode=display">
+\boldsymbol L=I\boldsymbol\omega</script><p>等式两边分别对$t$求导，即得</p>
+<script type="math/tex; mode=display">
+\boldsymbol M=I\boldsymbol\beta</script><p>这就是力矩与角加速度的关系。该式在研究刚体转动中的地位与牛顿第二定律在研究刚体平动中的地位相当。</p>
+</li>
+</ol>
+
     </div>
 
     
@@ -303,7 +348,7 @@ f[i][j]=\min_{k\in[i,j-1]}\{f[i][k]+f[k+1][j]+s[j]-s[i-1]\}</script><p>即区间
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://dashu-li.github.io/2020/11/05/%E9%A2%98%E8%A7%A3%20P2308%E3%80%90%E6%B7%BB%E5%8A%A0%E6%8B%AC%E5%8F%B7%E3%80%91/" title="题解 P2308【添加括号】">https://dashu-li.github.io/2020/11/05/题解 P2308【添加括号】/</a>
+    <a href="https://dashu-li.github.io/2021/12/05/%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/" title="刚体力学笔记">https://dashu-li.github.io/2021/12/05/刚体力学笔记/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -314,8 +359,7 @@ f[i][j]=\min_{k\in[i,j-1]}\{f[i][k]+f[k+1][j]+s[j]-s[i-1]\}</script><p>即区间
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B-OI/" rel="tag"># 信息学奥赛/OI</a>
-              <a href="/tags/%E6%B4%9B%E8%B0%B7/" rel="tag"># 洛谷</a>
+              <a href="/tags/%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B-PhO/" rel="tag"># 物理竞赛/PhO</a>
           </div>
 
         
@@ -324,13 +368,10 @@ f[i][j]=\min_{k\in[i,j-1]}\{f[i][k]+f[k+1][j]+s[j]-s[i-1]\}</script><p>即区间
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/08/10/%E9%A2%98%E8%A7%A3%20P1352%E3%80%90%E6%B2%A1%E6%9C%89%E4%B8%8A%E5%8F%B8%E7%9A%84%E8%88%9E%E4%BC%9A%E3%80%91/" rel="prev" title="题解 P1352【没有上司的舞会】">
-      <i class="fa fa-chevron-left"></i> 题解 P1352【没有上司的舞会】
+    <a href="/2021/10/19/%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E6%8F%8F%E8%BF%B0%E8%BE%B9%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E8%AF%81%E6%98%8E/" rel="prev" title="三角形中描述边关系的定理及其证明">
+      <i class="fa fa-chevron-left"></i> 三角形中描述边关系的定理及其证明
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/03/09/%E8%AF%95%E6%A0%B9%E6%B3%95%E6%B5%85%E6%9E%90/" rel="next" title="试根法浅析">
-      试根法浅析 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -394,7 +435,7 @@ f[i][j]=\min_{k\in[i,j-1]}\{f[i][k]+f[k+1][j]+s[j]-s[i-1]\}</script><p>即区间
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">题面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E8%83%8C%E6%99%AF"><span class="nav-number">1.1.</span> <span class="nav-text">题目背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.2.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.3.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.4.</span> <span class="nav-text">输出格式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F"><span class="nav-number">1.</span> <span class="nav-text">转动惯量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9A%E4%BD%93%E7%9A%84%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8"><span class="nav-number">2.</span> <span class="nav-text">刚体的定轴转动</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
